@@ -53,7 +53,6 @@ const Signup = (props) =>{
 
     const signup = (e) => {
         if(validateForm()){
-            console.log(email,userRole,password,confirmPassword,name,skills);
             axios.post(`${BASE_URL}/auth/register`,{
                 "email": email,
                 "userRole": userRole, 
@@ -65,7 +64,7 @@ const Signup = (props) =>{
             .then((res)=>{
                 props.setUser(res.data);
                 localStorage.setItem("user",JSON.stringify(res.data));
-                userRole == 0 ? history.push('/recruiter') : history.push('/candidate');
+                userRole == 0 ? history.push('/recruiter') : history.push('/MyJobsPortal-ReactApp/candidate');
             })
             .catch((err)=>{
                 console.log(err.response);
@@ -215,7 +214,7 @@ const Signup = (props) =>{
                     <Button className="signup-btn" onClick={signup}>Signup</Button>
                 </div>
                 { !isValid ? <p className="error-text">Incorrect email address or password</p> : null} 
-                <p className="login-link">Have an account? <a onClick={()=>{history.push('/login')}}>Login</a></p>
+                <p className="login-link">Have an account? <a onClick={()=>{history.push('/MyJobsPortal-ReactApp/MyJobsPortal-ReactApp/login')}}>Login</a></p>
             </Form>
         </div>
         </>

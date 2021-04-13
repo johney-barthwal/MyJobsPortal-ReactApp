@@ -21,14 +21,14 @@ const ChangePassword = () =>{
             })
             .then((res)=>{
                 alert("password changed successfully");
-                history.push('/login');
+                history.push('/MyJobsPortal-ReactApp/login');
             })
             .catch((err)=>{
                 setvalidPassword(err.response.data.message);
             });
         })
         .catch((err)=>{
-            history.push('/fp');
+            history.push('/MyJobsPortal-ReactApp/fp');
         });
     }
 

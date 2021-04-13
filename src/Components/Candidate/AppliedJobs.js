@@ -38,8 +38,11 @@ const AppliedJobs = (props) => {
         let endIndex = displayPage*jobsPerPage;
         setAppliedJobs(appliedJobsAll.slice(startIndex,endIndex));
         
-        if(appliedJobsAll.length<jobsPerPage){
+        if(displayPage === 1 && appliedJobsAll.length<jobsPerPage){
             setDisableNext(true);
+        }
+        else if(displayPage === 1) {
+            setDisableNext(false);
         }
 
     },[appliedJobsAll,displayPage]);
@@ -75,7 +78,7 @@ const AppliedJobs = (props) => {
             <div className="home-link">
                 <div className="home-icon"></div>
                 <div className="navigation-text">
-                    <a onClick={()=>{props.history.push('/candidate')}}>Home</a>
+                    <a onClick={()=>{props.history.push('/MyJobsPortal-ReactApp/candidate')}}>Home</a>
                     <span>&nbsp;>&nbsp;</span>
                     <a>Applied Jobs</a>
                 </div>
@@ -100,7 +103,7 @@ const AppliedJobs = (props) => {
                         <br/>
                         <br/>
                         <div className="rec-no-post__button">
-                            <button onClick={()=>{props.history.push('/candidate')}}>See all Jobs</button> 
+                            <button onClick={()=>{props.history.push('/MyJobsPortal-ReactApp/candidate')}}>See all Jobs</button> 
                         </div>
                     </div>
                 }

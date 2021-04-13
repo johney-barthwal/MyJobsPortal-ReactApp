@@ -22,14 +22,14 @@ const Header = (props) => {
             props.setUser(null); 
             setUserRole(null);
             localStorage.removeItem('user'); 
-            history.push('/');
+            history.push('/MyJobsPortal-ReactApp');
         });
     }
     return (
         <header> 
             <nav>
                 <div className="logo__wrapper">
-                    <div className="logo" onClick={()=>{history.push('/')}}></div>
+                    <div className="logo" onClick={()=>{history.push('/MyJobsPortal-ReactApp')}}></div>
                 </div>
                 <div className="nav-links__wrapper">
                     { props.user? 
@@ -51,10 +51,10 @@ const Header = (props) => {
                             }
                         </>
                         : 
-                        <button className="login-btn" onClick={()=>{history.push('/login')}}>Login/SignUp</button>
+                        <button className="login-btn" onClick={()=>{history.push('/MyJobsPortal-ReactApp/login')}}>Login/SignUp</button>
                         }
-                    { userRole == 0 ? <a className="post-job" onClick={()=>{history.push('/postjob')}}>Post a job</a> : null}
-                    { userRole == 1 ? <a className="applied-jobs" onClick={()=>{history.push('/applied')}}>Applied Jobs</a> : null}
+                    { userRole == 0 ? <a className="post-job" onClick={()=>{history.push('/MyJobsPortal-ReactApp/postjob')}}>Post a job</a> : null}
+                    { userRole == 1 ? <a className="applied-jobs" onClick={()=>{history.push('/MyJobsPortal-ReactApp/applied')}}>Applied Jobs</a> : null}
                     
                 </div>
             </nav>

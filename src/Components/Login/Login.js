@@ -24,7 +24,7 @@ const Login = (props) =>{
             },(res)=>{
                 props.setUser(res.data);
                 localStorage.setItem("user",JSON.stringify(res.data));
-                res.data.data.userRole == 0 ? props.history.push('/recruiter') : props.history.push('/candidate');
+                res.data.data.userRole == 0 ? props.history.push('/MyJobsPortal-ReactApp/recruiter') : props.history.push('/MyJobsPortal-ReactApp/candidate');
             },(err)=>{
                 if(err.response){
                     setErrorMsg(err.response.data.message);
@@ -61,7 +61,7 @@ const Login = (props) =>{
 
                 <Form.Group controlId="loginPassword">
                     <Form.Label className="login_label">Password</Form.Label>
-                    <a className="login_forgot-link" onClick={()=>{props.history.push('/fp')}}>Forgot your password?</a>
+                    <a className="login_forgot-link" onClick={()=>{props.history.push('/MyJobsPortal-ReactApp/fp')}}>Forgot your password?</a>
                     <Form.Control  type="password" className={`login_password ${!isValid ? 'error' :''}`} placeholder="Enter your password"
                     value = {password}
                     onFocus={handleOnFocus}  
@@ -73,7 +73,7 @@ const Login = (props) =>{
                     Login
                 </Button>
                 { !isValid ? <p className="error-text">{errorMsg}</p> : null}
-                <p className="register-link">New to MyJobs? <a onClick={()=>{props.history.push('/signup')}}>Create an account</a></p>
+                <p className="register-link">New to MyJobs? <a onClick={()=>{props.history.push('/MyJobsPortal-ReactApp/signup')}}>Create an account</a></p>
             </Form>
         </div>
         </>

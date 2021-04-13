@@ -14,10 +14,9 @@ const ForgotPassword = () =>{
         axios.get(`${BASE_URL}/auth/resetpassword?email=${email}`)
         .then((res)=>{
             localStorage.setItem("reset-token",res.data.data.token);
-            history.push('/cp');
+            history.push('/MyJobsPortal-ReactApp/cp');
         })
         .catch((err)=>{
-            //console.log(err);
             setValidEmail("No user found with the provided email");
         });
     }

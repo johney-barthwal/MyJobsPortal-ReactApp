@@ -31,7 +31,7 @@ const PostJob = () =>{
             },config)
             .then((res)=>{
                 alert("Job posted successfully.");
-                history.push("/recruiter");
+                history.push("/MyJobsPortal-ReactApp/recruiter");
             })
             .catch((err)=>{
                 console.log(err.response);
@@ -104,7 +104,7 @@ const PostJob = () =>{
             <div className="home-link">
                 <div className="home-icon"></div>
                 <div className="navigation-text">
-                    <a onClick={()=>{history.push('/recruiter')}}>Home</a>
+                    <a onClick={()=>{history.push('/MyJobsPortal-ReactApp/recruiter')}}>Home</a>
                     <span>&nbsp;>&nbsp;</span>
                     <a>Post a Job</a>
                 </div>

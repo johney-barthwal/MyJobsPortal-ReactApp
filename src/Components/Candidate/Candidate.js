@@ -42,10 +42,13 @@ const Candidate = () => {
         let endIndex = displayPage*jobsPerPage;
         setJobs(jobsAll.slice(startIndex,endIndex));
 
-        if(totalJobs<jobsPerPage){
+        if(displayPage === 1 && jobsAll.length<jobsPerPage){
             setDisableNext(true);
         }
-        
+        else if(displayPage === 1) {
+            setDisableNext(false);
+        }
+
     },[jobsAll,displayPage]);
 
     const applyJob = (e)=>{
@@ -54,9 +57,7 @@ const Candidate = () => {
         if(eleClasses.contains("job-card__action-btn") && eleType === "button"){
             let elementId = Number(e.target.parentNode.parentNode.parentNode.id);
             let index = elementId + ((displayPage-1)*jobsPerPage);
-            console.log(index);
             let jobId = jobsAll[index].id;
-            //console.log(index,jobId);
             const config = {
                 headers: { Authorization: user.data.token }
             };

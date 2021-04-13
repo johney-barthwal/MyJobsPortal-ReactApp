@@ -43,10 +43,12 @@ const Recruiter = (props) => {
         let startIndex = (displayPage-1)*jobsPerPage;
         let endIndex = displayPage*jobsPerPage;
         setJobPosts(jobPostsAll.slice(startIndex,endIndex));
-        console.log(displayPage,totalJobs);
 
-        if(totalJobs<jobsPerPage){
+        if(displayPage === 1 && totalJobs<jobsPerPage){
             setDisableNext(true);
+        }
+        else if(displayPage === 1) {
+            setDisableNext(false);
         }
 
     },[jobPostsAll,displayPage]);
@@ -138,7 +140,7 @@ const Recruiter = (props) => {
                     <br/>
                     <br/>
                     <div className="rec-no-post__button">
-                        <button onClick={()=>{props.history.push('/postjob')}}>Post a Job</button> 
+                        <button onClick={()=>{props.history.push('/MyJobsPortal-ReactApp/postjob')}}>Post a Job</button> 
                     </div>
                     </div>
             }

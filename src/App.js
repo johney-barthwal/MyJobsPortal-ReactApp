@@ -17,7 +17,6 @@ import AppliedJobs from './Components/Candidate/AppliedJobs';
 import Recruiter from './Components/Recruiter/Recruiter';
 import PostJob from './Components/Recruiter/PostJob';
 import {PageNotFound} from './Utility/PageNotFound';
-import Test from './Components/Candidate/Test';
 function App() {
 
   const [user,setUser] = useState(null);
@@ -33,29 +32,28 @@ function App() {
       <div className="App">
         <Header user={user} setUser={setUser} />
         <Switch> 
-          <Route exact path='/' component={HomePage}/>
+          <Route exact path='/MyJobsPortal-ReactApp' component={HomePage}/>
           <Route
-            path='/login'
+            path='/MyJobsPortal-ReactApp/login'
             render={(props) => (
               <Login {...props}  setUser={setUser}/>
             )}
           />
-          <Route exact path='/fp' component={ForgotPassword}/>
-          <Route exact path='/cp' component={ChangePassword}/>
+          <Route exact path='/MyJobsPortal-ReactApp/fp' component={ForgotPassword}/>
+          <Route exact path='/MyJobsPortal-ReactApp/cp' component={ChangePassword}/>
           <Route
-            path='/signup'
+            path='/MyJobsPortal-ReactApp/signup'
             render={(props) => (
               <Signup {...props}  setUser={setUser}/>
             )}
           />
-          <ProtectedRoute exact path='/candidate' component={Candidate}/>
-          <ProtectedRoute exact path='/applied' component={AppliedJobs}/>
-          <ProtectedRoute exact path='/recruiter' component={Recruiter}/>
-          <ProtectedRoute exact path='/postjob' component={PostJob}/>
-          <Route exact path='/test' component={Test}/>
+          <ProtectedRoute exact path='/MyJobsPortal-ReactApp/candidate' component={Candidate}/>
+          <ProtectedRoute exact path='/MyJobsPortal-ReactApp/applied' component={AppliedJobs}/>
+          <ProtectedRoute exact path='/MyJobsPortal-ReactApp/recruiter' component={Recruiter}/>
+          <ProtectedRoute exact path='/MyJobsPortal-ReactApp/postjob' component={PostJob}/>
           <Route exact path='*' component={PageNotFound}/>
         </Switch>
-      </div>
+      </div> 
     </Router>
   );
 }
