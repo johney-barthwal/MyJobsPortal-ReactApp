@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/MyJobsPortal-ReactApp/static/css/main.1048a23e.chunk.css",
+    "main.js": "/MyJobsPortal-ReactApp/static/js/main.a2fbee0b.chunk.js",
+    "main.js.map": "/MyJobsPortal-ReactApp/static/js/main.a2fbee0b.chunk.js.map",
+    "runtime-main.js": "/MyJobsPortal-ReactApp/static/js/runtime-main.f883f85a.js",
+    "runtime-main.js.map": "/MyJobsPortal-ReactApp/static/js/runtime-main.f883f85a.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/MyJobsPortal-ReactApp/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.d419c2d5.chunk.js": "/MyJobsPortal-ReactApp/static/js/2.d419c2d5.chunk.js",
+    "static/js/2.d419c2d5.chunk.js.map": "/MyJobsPortal-ReactApp/static/js/2.d419c2d5.chunk.js.map",
+    "static/js/3.57f07980.chunk.js": "/MyJobsPortal-ReactApp/static/js/3.57f07980.chunk.js",
+    "static/js/3.57f07980.chunk.js.map": "/MyJobsPortal-ReactApp/static/js/3.57f07980.chunk.js.map",
+    "index.html": "/MyJobsPortal-ReactApp/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/MyJobsPortal-ReactApp/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.1048a23e.chunk.css.map": "/MyJobsPortal-ReactApp/static/css/main.1048a23e.chunk.css.map",
+    "static/js/2.d419c2d5.chunk.js.LICENSE.txt": "/MyJobsPortal-ReactApp/static/js/2.d419c2d5.chunk.js.LICENSE.txt",
+    "static/media/homepage.css": "/MyJobsPortal-ReactApp/static/media/solaytic_logo.8fcec411.png",
+    "static/media/signup.css": "/MyJobsPortal-ReactApp/static/media/recruiter_icon.3fb345f3.png",
+    "static/media/candidate.css": "/MyJobsPortal-ReactApp/static/media/location.8210970a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f883f85a.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.d419c2d5.chunk.js",
+    "static/css/main.1048a23e.chunk.css",
+    "static/js/main.a2fbee0b.chunk.js"
+  ]
+}
