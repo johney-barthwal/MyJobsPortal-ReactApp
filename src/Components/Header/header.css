@@ -1,0 +1,105 @@
+header{
+    top: 30px;
+    left: 0px;
+    height: 464px;
+    background: transparent linear-gradient(248deg, #303F60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+}
+
+.logo__wrapper{
+    display: inline-block;
+    margin: 20px;
+}
+.logo{
+    width: 92px;
+    height: 26px;
+    background: transparent url('../../Assets/MyJobs_logo.png') 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+.nav-links__wrapper{
+    flex-grow: 1;
+}
+.login-btn{
+    position: relative;
+    top: 12px;
+    right: 70px;
+    width: 148px;
+    height: 46px;
+    background: #43AFFF33 0% 0% no-repeat padding-box;
+    border: 1px solid #43AFFF;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal normal 16px/19px Helvetica Neue;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+}
+
+.login-btn:hover{
+    background: #43AFFF 0% 0% no-repeat padding-box;
+}
+
+.post-job , .applied-jobs{
+    font: normal normal normal 16px/18px Helvetica Neue;
+    color: #FFFFFF;
+    opacity: 0.8;
+    float: right;
+    margin: 25px 50px;
+}
+
+.post-job:hover , .applied-jobs:hover{
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
+} 
+
+.profile-btn-container{
+    float: right;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.profile-btn{
+    width: 46px;
+    height: 46px;
+    background: #D9EFFF 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+  }
+
+.profile-dropdown{
+    position: absolute;
+    border-radius: 5px;
+    background-color: #fff; 
+    right: 10px;
+    top: 60px;
+    min-width: 100px;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    color: #303F60;
+    z-index: 1;
+}
+
+.profile-dropdown a{
+   display: block;
+   min-width: 100px;
+   padding: 10px;
+}
+.profile-dropdown a:hover{
+    cursor: pointer;
+    background: #ddd;
+}

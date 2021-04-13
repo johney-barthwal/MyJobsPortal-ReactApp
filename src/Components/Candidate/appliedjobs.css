@@ -1,0 +1,23 @@
+.home-link{
+    position: absolute;
+    top: 150px;
+    left: 173px;
+    display: flex;
+}
+.navigation-text{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.navigation-text a:first-of-type:hover{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.page-title{
+    position: absolute;
+    top: 300px;
+    left: 173px;
+    color: #fff;
+    font: normal normal normal 22px/27px Helvetica Neue;
+}

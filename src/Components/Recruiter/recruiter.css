@@ -1,0 +1,31 @@
+
+.rec-no-post-container{
+    position: absolute;
+    top: 200px;
+    left: 30%;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+.rec-no-post__text{
+    font: normal normal normal 20px/24px Helvetica Neue;
+    color: #303F60;
+    opacity: 0.8;
+}
+.rec-no-post__button button{
+    width: 148px;
+    height: 46px;
+    background: #43AFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #43AFFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font: normal normal medium 16px/19px Helvetica Neue;
+}
+
+.rec-no-post__img{
+    width: 150px;
+    height: 150px;
+    background: transparent url('../../Assets/writing.png') 0%/cover no-repeat padding-box;
+    opacity: 0.5;
+    margin: auto;
+} 

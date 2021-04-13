@@ -1,0 +1,149 @@
+
+.welcome-text{
+    position: absolute; 
+    top: 160px;
+    left: 190px;
+    width: 334px;
+    height: 144px;
+}
+.welcome-text_text{ 
+    top: 0px;
+    left: 0px;
+    width: 334px;
+    height: 70px;
+    text-align: left;
+    font: normal normal normal 50px/64px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.welcome-text_company-name span{
+    text-align: left;
+    font: normal normal bold 50px/64px Helvetica Neue;;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.welcome-text_company-name span:last-of-type{
+    color: #43AFFF;
+}
+
+.home-img{
+    position: absolute; 
+    top: 131px;
+    left: 651px;
+    width: 622px;
+    height: 395px;
+    background: transparent url('../../Assets/homepage-image.jpg') 0% 0%/cover no-repeat padding-box ;
+    box-shadow: 0px 30px 36px #557DA526; 
+    border-radius: 20px;
+    opacity: 1; 
+}
+
+.section_wrapper{
+    position: absolute;
+    left: 190px;
+    top: 606px;
+    width: 1083px;
+    height: 606px;
+}
+
+.section_heading{
+    padding-bottom: 30px;
+}
+
+.section_wrapper section{
+    margin-bottom: 100px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 341px;
+    height: 192px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #557DA526;
+    border-radius: 5px;
+}
+
+.card_heading{
+    position: relative;
+    top:24px;
+    left: 20px;
+    width: 200px;
+    text-align: left;
+    font: normal normal bold 22px/27px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #43AFFF;
+    text-transform: capitalize;
+}
+
+.card_text{
+    position: relative;
+    top: 45px;
+    left: 20px;
+    width: 301px;
+    text-align: left;
+    font: normal normal normal 14px/20px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #303F60;
+}
+
+.companies-logo{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.solaytic{
+    width: 125px;
+    height: 70px;
+    margin-right: 80px;
+    background: transparent url('../../Assets/solaytic_logo.png') 0%/cover no-repeat padding-box;
+}
+.bmw{
+    width: 125px;
+    height: 70px;
+    margin-right: 80px;
+    background: transparent url('../../Assets/bmw_logo.jpg') 0%/cover no-repeat padding-box;
+}
+.flipcart{
+    width: 180px;
+    height: 70px;
+    margin-right: 80px;
+    background: transparent url('../../Assets/flipcart_logo.png') 0%/contain no-repeat padding-box;
+}
+.disney{
+    width: 125px;
+    height: 70px;
+    margin-right: 80px;
+    background: transparent url('../../Assets/disney_logo.png') 0%/cover no-repeat padding-box;
+}
+.dell{
+    width: 180px;
+    height: 70px;
+    background: transparent url('../../Assets/dell_logo.png') 0%/contain no-repeat padding-box;
+}
+.airtel{
+    margin: 0px 80px 0px 80px;
+    width: 180px;
+    height: 70px;
+    background: transparent url('../../Assets/airtel_logo.png') 0%/cover no-repeat padding-box;
+}
+.macd{
+    width: 180px;
+    height: 70px;
+    background: transparent url('../../Assets/macd_logo.png') 0%/contain no-repeat padding-box;
+}
+.samsung{
+    width: 180px;
+    height: 70px;
+    margin-right: 75px; 
+    background: transparent url('../../Assets/samsung_logo.png') 0%/contain no-repeat padding-box;
+}
+.audi{
+    width: 180px;
+    height: 70px;
+    background: transparent url('../../Assets/audi_logo.png') 0%/cover no-repeat padding-box;
+}

@@ -1,0 +1,101 @@
+.home-link{
+    position: absolute;
+    top: 250px;
+    left: 173px;
+    display: flex;
+}
+.home-text{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.home-icon{
+    width: 40px;
+    height: 40px;
+    background: transparent url('../../Assets/home.png') 0%/cover no-repeat padding-box;
+
+}
+.page-title{
+    position: absolute;
+    top: 300px;
+    left: 173px;
+    color: #fff;
+    font: normal normal normal 22px/27px Helvetica Neue;
+}
+
+.list-of-jobs{
+    position: absolute;
+    top: 360px;
+    left: 173px;
+    width: 1094px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-card{
+    margin: 0px 20px 30px 0px;
+    width: 250px;
+    height: 180px;
+}
+
+.job-card__title{
+    text-align: left;
+    font: normal normal normal 17px/20px Helvetica Neue;
+    color: #303F60; 
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.job-card__text-wrapper{
+    height: 65px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.job-card__text{
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    color: #303F60;
+    opacity: 0.8;
+}
+.job-card__location{
+    margin: 5px 0px 0px 8px;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    color: #303F60;
+    opacity: 0.8;
+}
+.location-img{
+    width: 20px;
+    height: 20px;
+    color: black;
+    background: transparent url('../../Assets/location.png') 0%/cover no-repeat padding-box;
+
+}
+.job-card__action{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    width: 208px;
+}
+.job-card__action-btn{
+    margin-left: auto;
+    height: 32px;
+    background: #43AFFF33 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal normal 12px/14px Helvetica Neue;
+    color: #303F60;
+}
+
+
+

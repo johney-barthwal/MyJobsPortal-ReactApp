@@ -1,0 +1,13 @@
+.no-application__wrapper{
+    background: #ddd;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.applicants-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
